@@ -9,9 +9,12 @@ script:
   - npm run build # Runs next build
 
 deploy:
-  provider: pages
-  skip_cleanup: true
-  github_token: $GITHUB_TOKEN # Set in the settings page of your repository, as a secure variable
-  keep_history: true
+  provider: pages # Informs Travis this is a deployment to GitHub Pages
+  skip_cleanup: true # Prevents Travis from resetting the working directory made during the build
+  github_token: $github_token # GitHub access token to use when pushing to the gh-pages branch
+  local_dir: build # Directory to push to the gh-pages branch
   on:
+    # Only deploy when the build is on master or main branch - two common default branch names
+    # If you're using a different branch name, add it here
     branch: main
+    condition: $TRAVIS_BRANCH =~ ^(master|main)$
