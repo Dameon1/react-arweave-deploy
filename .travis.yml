@@ -7,7 +7,6 @@ cache:
     - node_modules # Cache the node_modules folder for quicker build times
 script:
   - npm run build # Runs next build
-  - npm run deploy # gh-pages -d build
 
 deploy:
   provider: pages # Informs Travis this is a deployment to GitHub Pages
