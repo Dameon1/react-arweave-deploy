@@ -15,7 +15,7 @@
   },
   "scripts": {
     "pre-deploy": "npm run build",
-    "deploy": "npm run build && npm run deploy:gh",
+    "deploy": "npm run build && npm run test",
     "deploy:gh": "gh-pages -d build",
     "deploy:arkb": "arkb deploy build -w secrets/wallet.json --timeout=50000 --debug",
     "start": "react-scripts start",
