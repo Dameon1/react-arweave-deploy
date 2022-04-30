@@ -1,3 +1,7 @@
+[![Build Status](https://app.travis-ci.com/Dameon1/react-arweave-deploy.svg?branch=main)](https://app.travis-ci.com/Dameon1/react-arweave-deploy.svg?branch=main)
+
+
+
 # Step 01: Create-React-App
 - npx create-react-app [project name]
 
