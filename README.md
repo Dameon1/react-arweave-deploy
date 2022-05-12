@@ -17,8 +17,7 @@ In the "scripts" section of package.json, add
 ## Arweave pre-deploy
 
 We will be using Arweave-deploy to package and deploy our site, as well as arkb. Enter the following commands to install them both:
-- npm install -g arweave-deploy
-- npm install -g arweave-deploy
+- npm install -g arweave-deploy arkb
 - Add your saved keyfile to a new directory /secrets with a name of wallet.json
 * Remember to add to .ignore file if you use a version control
 
